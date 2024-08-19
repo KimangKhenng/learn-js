@@ -99,18 +99,18 @@ const peopleWith25 = people.find((ele) => {
 // console.log(peopleWith25)
 // console.log(peopleWith17Plus)
 
-console.log(new_salary.join(' '))
+// console.log(new_salary.join(' '))
 
 const doubleSalary = new_salary.map((ele) => {
     return ele + 2
 })
 
-console.log(doubleSalary.join(' '))
+// console.log(doubleSalary.join(' '))
 
 
 const question = new_salary + doubleSalary
 
-console.log(typeof (question))
+// console.log(typeof (question))
 // forEach, just focus on loop , loop each element
 // map, perform computation on each element
 
@@ -124,7 +124,31 @@ const isTherePersonAge13 = people.some((ele) => {
     return ele.age == 12
 })
 
-console.log(isTherePersonAge13)
+// console.log(isTherePersonAge13)
+
+let numbers = [1, 2, 3, 4, 5];
+let doubleNumber = []
+
+numbers.forEach(function (number) {
+    doubleNumber.push(number * 2)
+})
+
+console.log(doubleNumber)
+// Vue - computed properties 
+// Used to compute exiting variable into new form
+// example 
+/** Vue JS
+ * user = {
+ *  firstname: "KK"
+ *  lastname: "LL"
+ * }
+ * 
+ * computed:{
+ *    fullname(){
+ *       return firstname + lastname
+ *    }
+ * }
+ */
 
 
 
